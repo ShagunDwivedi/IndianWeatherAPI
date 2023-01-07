@@ -1,10 +1,14 @@
 ## IndianWeatherAPI
 
-Scrapes the Indian Meteorological Dept's website to access weather data.
+The API scrapes the India Meteorological Dept's website to access weather data.
 
 ### Function:
 
-Returns closest match suggestions if station not present in [city-links](city_links.json).
+- Provides Weather Data based on station's name (duh)
+- Returns closest match suggestions if station not present in [city-links](city_links.json).
+
+
+### Endpoints:
 
 - /station/weather
     - Maximum Temp                  (°C)
@@ -33,3 +37,10 @@ Returns closest match suggestions if station not present in [city-links](city_li
     - Max Temp	                    (°C)
     - Weather                       (Description)
 
+### To-Do:
+
+- Restructure Folders and remove unnecessary imports/variables
+- Delete the ipynb
+- ADD A DISCLAIMER (ALL DATA BELONGS TO IMD AND API WILL BREAK WHEN IMD WEBSITE STUCTURE CHANGES) 
+- create yaml file
+- Schedule updating city-links
