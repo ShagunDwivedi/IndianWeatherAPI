@@ -34,9 +34,9 @@ def get_daily(city, detailed=False):
     if(detailed==True):
 
         daily_list['max_temp'] = table_cells[4].font.text.strip()
-        daily_list['max_temp_departure'] = table_cells[6].font.text.strip()
+        daily_list['max_temp_departure_from_normal'] = table_cells[6].font.text.strip()
         daily_list['min_temp'] = table_cells[8].font.text.strip()
-        daily_list['min_temp_departure'] = table_cells[10].font.text.strip()
+        daily_list['min_temp_departure_from_normal'] = table_cells[10].font.text.strip()
         daily_list['24hr_rainfall'] = table_cells[12].font.text.strip()
         daily_list['total_rainfall'] = table_cells[14].font.text.strip()
         daily_list['humidity_0830'] = table_cells[16].font.text.strip()
