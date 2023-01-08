@@ -1,4 +1,4 @@
-## IndianWeatherAPI
+# IndianWeatherAPI
 
 The API scrapes the India Meteorological Dept's website to access weather data.
 
