@@ -2,45 +2,30 @@
 
 The API scrapes the India Meteorological Dept's website to access weather data.
 
-### Function:
+## Functions:
 
-- Provides Weather Data based on station's name (duh)
-- Returns closest match suggestions if station not present in [city-links](city_links.json).
+- Access brief or detailed weather report based on station's name.
+- Also provides forecast for the next seven days.
+- Returns closest match suggestions if station not present in [city-links](./utils/city_links.json).
 
+## Setup:
 
-### Endpoints:
+- Install ```python``` and ```pip```
+- Install all dependencies by running:
+    - ```python
+        pip install -r requirements.txt
+        ```
+- Run the app:
+    - ```python
+        python3 main.py
+        ```
 
-- /station/weather
-    - Maximum Temp                  (°C)
-    - Minimum Temp                  (°C) 
-    - Total Rainfall                (mm) 
-    - Relative Humidity at 0830 hrs (%)
+## API Documentation
 
+To view the documentation refer to [this](api.yaml) document.
 
-- /station/detailed_weather
-    - Maximum Temp                  (°C)
-    - Departure from Normal         (°C)
-    - Minimum Temp                  (°C) 
-    - Departure from Normal         (°C)
-    - 24 Hours Rainfall             (mm) 
-    - Total Rainfall                (mm) 
-    - Relative Humidity at 0830 hrs (%)
-    - Relative Humidity at 1730 hrs (%) 
-    - Todays Sunset                 (IST)	
-    - Tomorrow's Sunrise            (IST) 
-    - Moonset                       (IST)
-    - Moonrise                      (IST) 
+## Disclaimer
 
-- /station/forecast
-    - Date	                        (DD-Month)
-    - Min Temp	                    (°C)
-    - Max Temp	                    (°C)
-    - Weather                       (Description)
+- All data belongs to India Meteorological Department, the API only accesses and provides published on [IMD Website](https://city.imd.gov.in/citywx/localwx.php). The project is NOT affiliated to IMD in any way.
+- The tool may crash as soon as the structure of the website changes.
 
-### To-Do:
-
-- Restructure Folders and remove unnecessary imports/variables
-- Delete the ipynb
-- ADD A DISCLAIMER (ALL DATA BELONGS TO IMD AND API WILL BREAK WHEN IMD WEBSITE STUCTURE CHANGES) 
-- create yaml file
-- Schedule updating city-links
