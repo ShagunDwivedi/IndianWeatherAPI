@@ -1,11 +1,10 @@
 from difflib import get_close_matches
 import json
-from urllib.parse import urlencode
 
 import requests
 from bs4 import BeautifulSoup
 
-with open('./city_links.json') as json_file:
+with open('utils/city_links.json') as json_file:
     data = json.load(json_file)
 city_list = list(data.keys())
 
